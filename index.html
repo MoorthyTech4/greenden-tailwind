@@ -14,7 +14,7 @@
   <nav class="bg-green-200 p-3 flex items-center justify-between h-30 shadow-xl sticky top-0 z-10">
     <h1 class="text-2xl">GREENDEN</h1>
 
-    <svg class="h-5 w-5 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    <svg id="menuicon" class="h-5 w-5 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
       stroke="currentColor" class="size-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
@@ -34,6 +34,26 @@
       </li>
     </ul>
   </nav>
+
+  <!-- Side navbar -->
+   <section id="sidenav" class="bg-green-200 top-0 fixed z-20 transition-all duration-700" style="width: 50%; height: 100vh;right: -50%;">
+    <div class="text-right p-5">
+      <p id="closenav" class="inline cursor-pointer">X</p>
+    </div>
+   <ul class="flex flex-col items-center gap-10 text-gray-600" >
+      <li>
+        <a class="hover:underline hover:text-black" href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a class="hover:underline hover:text-black" href="product.html">Products</a>
+      </li>
+
+      <li>
+        <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    </section>
   <!-- Header Section -->
   <section class="bg-green-200 p-4 flex justify-center md:p-10">
 
@@ -153,6 +173,8 @@
       <p>The Standard chunk of Lorem ipsum used since the 1500s is reproduce below for those interest</p>
       <p>@ 2026 Greenden.com</p>
     </section>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
